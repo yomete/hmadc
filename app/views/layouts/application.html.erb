@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>How Much A Dollar Cost?</title>
+    <title>How Much A Dollar Really Cost?</title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Schoolbell|Short+Stack" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= audio_tag "hmadc.mp3", autoplay: true, loop: true %>
     <%= yield %>
 
     <script>

@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     attr_reader :title
   end
 
-  def scrape_reddit
+  def scrape_abokifx_latest
 
     require 'openssl'
     doc = Nokogiri::HTML(open('http://www.abokifx.com/', :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE))
@@ -20,8 +20,12 @@ class ApplicationController < ActionController::Base
       @entriesArray << Entry.new(title)
     end
 
-    render template: 'scrape_abokifx'
+    render template: 'scrape_abokifx_latest'
   end
 
+  def scrape_abokifx_previous
+
+    render template: 'scrape_abokifx_previous'
+  end
 
 end

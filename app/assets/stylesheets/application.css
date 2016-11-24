@@ -16,4 +16,36 @@
 body {
     background: green;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+.entry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.entry .h3 {
+    text-align: center;
+    font-family: 'Schoolbell', cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+.outer {
+
+}
+.outer p {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Schoolbell', cursive;
+}
+.source {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 1.4em;
+}
+.source a {
+    color: white;
+    text-decoration: underline;
 }
