@@ -1,0 +1,2 @@
+module BdcRatesHelper
+end

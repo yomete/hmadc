@@ -1,5 +1,4 @@
-class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+class BdcRatesController < ApplicationController
 
   class Entry
     def initialize(title)
@@ -8,10 +7,9 @@ class ApplicationController < ActionController::Base
     attr_reader :title
   end
 
-  def scrape_abokifx_latest
-
+  def bdcrates
     require 'openssl'
-    doc = Nokogiri::HTML(open('http://www.abokifx.com/', :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE))
+    doc = Nokogiri::HTML(open('http://www.abokifx.com/bdcs/', :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE))
 
     entries = doc.css('#main')
     @entriesArray = []
@@ -20,7 +18,6 @@ class ApplicationController < ActionController::Base
       @entriesArray << Entry.new(title)
     end
 
-    render template: 'scrape_abokifx_latest'
+    render template: 'scrape_abokifx_bdc'
   end
-
 end

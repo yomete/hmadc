@@ -49,3 +49,13 @@ body {
     color: white;
     text-decoration: underline;
 }
+.left {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    font-size: 1.4em;
+}
+.left a {
+    color: white;
+    text-decoration: underline;
+}
