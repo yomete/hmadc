@@ -6,5 +6,5 @@ Rails.application.routes.draw do
 
   get '/bdcrates' => 'bdc_rates#bdcrates'
 
-
+  get '/.well-known/acme-challenge/:id' => 'application#letsencrypt'
 end

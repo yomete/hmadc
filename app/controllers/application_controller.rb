@@ -8,6 +8,11 @@ class ApplicationController < ActionController::Base
     attr_reader :title
   end
 
+  def letsencrypt
+    # use your code here, not mine
+    render text: "PGSveN5VbU9M3Volp30F8me_4MorGb2tdhlKxbgnNkU.W8j0ttwL2jZOk5pFjjQcYJn2O3DI7Nf0gloXWDqH690"
+  end
+
   def scrape_abokifx_latest
 
     require 'openssl'
