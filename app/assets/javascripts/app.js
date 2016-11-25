@@ -1,6 +1,7 @@
 /**
  * Created by Yomi on 19/11/2016.
  */
+
 window.onload = function() {
     var text = document.getElementById("dollar").innerHTML;
 
@@ -11,3 +12,5 @@ window.onload = function() {
     }
     niceFormatting()
 };
+
+
