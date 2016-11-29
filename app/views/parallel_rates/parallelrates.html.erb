@@ -1,0 +1,11 @@
+<div class="entry">
+  <h3 class="h3">How much a dollar really cost?</h3>
+  <% @entriesArray.each do |entry| %>
+      <div class="outer">
+        <p>N<span id="dollar"><%= entry.title %></span></p>
+      </div>
+  <% end %>
+</div>
+
+<p class="left"><a href="bdcrates">BDC Rates</a></p>
+<p class="source">Scraped from <a target="_blank" href="http://abokifx.com">abokifx.com</a></p>

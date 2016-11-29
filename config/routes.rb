@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'application#scrape_abokifx_latest'
+  root 'parallel_rates#parallelrates'
 
   get '/bdcrates' => 'bdc_rates#bdcrates'
-
 
 end
