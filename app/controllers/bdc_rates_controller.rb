@@ -18,6 +18,7 @@ class BdcRatesController < ApplicationController
       @entriesArray << Entry.new(title)
     end
 
-    render template: 'scrape_abokifx_bdc'
+    render template: 'bdc_rates/bdcrates'
   end
+
 end
