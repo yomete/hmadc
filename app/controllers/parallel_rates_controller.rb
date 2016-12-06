@@ -16,9 +16,8 @@ class ParallelRatesController < ApplicationController
     @entriesArray = []
     entries.each do |entry|
       title = entry.css('table')[0].css('tr')[2].css('td')[1].text
-      title = title[6..-4]
+      title = title[6..-2]
       @entriesArray << Entry.new(title)
-      Rate.create fxrate: @entriesArray
     end
 
     render template: 'parallel_rates/parallelrates'
