@@ -15,8 +15,9 @@ class BdcRatesController < ApplicationController
     @entriesArray = []
     entries.each do |entry|
       title = entry.css('table')[0].css('tr')[2].css('td')[1].text
-      title = title[6..-1]
+      title = title[6..8]
       @entriesArray << Entry.new(title)
+      Rate.create bdcrates: @entriesArray
     end
 
     render template: 'bdc_rates/bdcrates'
