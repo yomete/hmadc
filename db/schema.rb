@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20161129211517) do
 
   create_table "rates", force: :cascade do |t|
     t.string   "fxrate"
-    t.string   "bdcrates"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
