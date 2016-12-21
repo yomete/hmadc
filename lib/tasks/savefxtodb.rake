@@ -32,13 +32,18 @@ namespace :savefxtodb do
             title = entries.css('table')[0].css('tr')[2].css('td')[1].text
             title = title[6..8]
             # puts title
-            # Rate.create(fxrate: title)
-            # tweet =  Rate.distinct.pluck(:fxrate)
+            # Rate.create(fxrate: 500)
+
+            # tweet =  Rate.last.fxrate
+            # puts tweet
+            # last = Rate.last(2).first.fxrate
+
             #
             # tweet = tweet.strip
-            client.search('#hmadc').take(5).each do |tweet|
-              client.update("@#{tweet.user.screen_name} A dollar costs N#{title}")
-            end
+
+            # client.search('#hmadc').take(5).each do |tweet|
+            #   client.update("@#{tweet.user.screen_name} A dollar costs N#{title}")
+            # end
     end
 
     desc "Saves Parallel FX rate to the DB"
@@ -65,9 +70,9 @@ namespace :savefxtodb do
             #
             # tweet = tweet.strip
             client.update("Morning, A dollar costs N#{title} ")
-            client.search('#hmadc').take(5).each do |tweet|
-              client.update("@#{tweet.user.screen_name} A dollar costs N#{title}")
-            end
+            # client.search('#hmadc').take(5).each do |tweet|
+            #   client.update("@#{tweet.user.screen_name} A dollar costs N#{title}")
+            # end
     end
 
     desc "Saves Parallel FX rate to the DB"
@@ -94,9 +99,9 @@ namespace :savefxtodb do
             #
             # tweet = tweet.strip
             client.update("Afternoon, A dollar costs N#{title} ")
-            client.search('#hmadc').take(5).each do |tweet|
-              client.update("@#{tweet.user.screen_name} A dollar costs N#{title}")
-            end
+            # client.search('#hmadc').take(5).each do |tweet|
+            #   client.update("@#{tweet.user.screen_name} A dollar costs N#{title}")
+            # end
     end
 
     desc "Saves Parallel FX rate to the DB"
@@ -123,9 +128,9 @@ namespace :savefxtodb do
             #
             # tweet = tweet.strip
             client.update("Evening, A dollar costs N#{title} ")
-            client.search('#hmadc').take(5).each do |tweet|
-              client.update("@#{tweet.user.screen_name} A dollar costs N#{title}")
-            end
+            # client.search('#hmadc').take(5).each do |tweet|
+            #   client.update("@#{tweet.user.screen_name} A dollar costs N#{title}")
+            # end
     end
 
 end
