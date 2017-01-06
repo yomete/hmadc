@@ -17,6 +17,7 @@ class BdcRatesController < ApplicationController
       title = entry.css('table')[0].css('tr')[2].css('td')[1].text
       title = title[6..8]
       @entriesArray << Entry.new(title)
+    #   The code below saves the scraped rate to the db
       # Rate.create bdcrates: @entriesArray
     end
 
