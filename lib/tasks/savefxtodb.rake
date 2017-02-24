@@ -13,10 +13,10 @@ namespace :savefxtodb do
 
             require 'openssl'
             require 'open-uri'
-            doc = Nokogiri::HTML(open('http://www.abokifx.com/'))
+            doc = Nokogiri::HTML(open('https://www.abokifx.com/'))
 
-            entries = doc.css('#main')
-            title = entries.css('table')[0].css('tr')[2].css('td')[1].text
+            entries = doc.css('.lagos-market-rates-inner')
+            title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
             client.update("Morning, A dollar costs N#{title} ")
@@ -36,10 +36,10 @@ namespace :savefxtodb do
 
             require 'openssl'
             require 'open-uri'
-            doc = Nokogiri::HTML(open('http://www.abokifx.com/'))
+            doc = Nokogiri::HTML(open('https://www.abokifx.com/'))
 
-            entries = doc.css('#main')
-            title = entries.css('table')[0].css('tr')[2].css('td')[1].text
+            entries = doc.css('.lagos-market-rates-inner')
+            title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
             client.update("Afternoon, A dollar costs N#{title} ")
@@ -59,10 +59,10 @@ namespace :savefxtodb do
 
             require 'openssl'
             require 'open-uri'
-            doc = Nokogiri::HTML(open('http://www.abokifx.com/'))
+            doc = Nokogiri::HTML(open('https://www.abokifx.com/'))
 
-            entries = doc.css('#main')
-            title = entries.css('table')[0].css('tr')[2].css('td')[1].text
+            entries = doc.css('.lagos-market-rates-inner')
+            title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
             client.update("Evening, A dollar costs N#{title} ")
