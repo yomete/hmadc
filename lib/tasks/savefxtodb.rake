@@ -19,7 +19,15 @@ namespace :savefxtodb do
             title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
-            client.update("Morning, A dollar costs N#{title} ")
+            @tweets = [
+                "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS MORNING. WE'RE DOOMED!",
+                "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
+                "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS MORNING",
+                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this morning."
+            ]
+            random_tweet = @tweets.sample
+
+            client.update(random_tweet)
 
     end
 
@@ -42,7 +50,15 @@ namespace :savefxtodb do
             title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
-            client.update("Afternoon, A dollar costs N#{title} ")
+            @tweets = [
+                "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS AFTERNOON. WE'RE DOOMED!",
+                "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
+                "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS AFTERNOON",
+                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this afternoon."
+            ]
+            random_tweet = @tweets.sample
+
+            client.update(random_tweet)
 
     end
 
@@ -65,8 +81,16 @@ namespace :savefxtodb do
             title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
-            client.update("Evening, A dollar costs N#{title} ")
-            
+            @tweets = [
+                "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS EVENING. WE'RE DOOMED!",
+                "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
+                "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS EVENING",
+                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this evening."
+            ]
+            random_tweet = @tweets.sample
+
+            client.update(random_tweet)
+
     end
 
 end
