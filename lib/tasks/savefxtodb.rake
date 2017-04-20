@@ -23,7 +23,13 @@ namespace :savefxtodb do
                 "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS MORNING. WE'RE DOOMED!",
                 "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
                 "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS MORNING",
-                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this morning."
+                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this morning.",
+                "FUCK ME SIDEWAYS! A DOLLAR IS TRADING FOR N#{title}",
+                "IF YOU WERE HAVING A GOOD MORNING. FUCK YOU. A DOLLAR IS N#{title}.",
+                "A DOLLAR IS N#{title}, WYD EMEFIELE?",
+                "GOOD NEWS!
+                 SIKE! NAIRA IS STILL SHIT AND EXCHANGED FOR N#{title} THIS MORNING.
+                "
             ]
             random_tweet = @tweets.sample
 
@@ -54,7 +60,13 @@ namespace :savefxtodb do
                 "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS AFTERNOON. WE'RE DOOMED!",
                 "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
                 "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS AFTERNOON",
-                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this afternoon."
+                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this afternoon.",
+                "FUCK ME SIDEWAYS! A DOLLAR IS TRADING FOR N#{title}",
+                "IF YOU WERE HAVING A GOOD AFTERNOON. FUCK YOU. A DOLLAR IS N#{title}.",
+                "A DOLLAR IS N#{title}, WYD EMEFIELE?",
+                "GOOD NEWS!
+                 SIKE! NAIRA IS STILL SHIT AND EXCHANGED FOR N#{title} THIS AFTERNOON.
+                "
             ]
             random_tweet = @tweets.sample
 
@@ -85,7 +97,13 @@ namespace :savefxtodb do
                 "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS EVENING. WE'RE DOOMED!",
                 "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
                 "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS EVENING",
-                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this evening."
+                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this evening.",
+                "FUCK ME SIDEWAYS! A DOLLAR IS TRADING FOR N#{title}",
+                "IF YOU WERE HAVING A GOOD EVENING. FUCK YOU. A DOLLAR IS N#{title}.",
+                "A DOLLAR IS N#{title}, WYD EMEFIELE?",
+                "GOOD NEWS!
+                 SIKE! NAIRA IS STILL SHIT AND EXCHANGED FOR N#{title} THIS EVENING.
+                "
             ]
             random_tweet = @tweets.sample
 
