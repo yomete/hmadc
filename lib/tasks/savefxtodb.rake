@@ -19,22 +19,7 @@ namespace :savefxtodb do
             title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
-            @tweets = [
-                "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS MORNING. WE'RE DOOMED!",
-                "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
-                "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS MORNING",
-                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this morning.",
-                "FUCK ME SIDEWAYS! A DOLLAR IS TRADING FOR N#{title}",
-                "IF YOU WERE HAVING A GOOD MORNING. FUCK YOU. A DOLLAR IS N#{title}.",
-                "A DOLLAR IS N#{title}, WYD EMEFIELE?",
-                "GOOD NEWS!
-                 SIKE! NAIRA IS STILL SHIT AND EXCHANGED FOR N#{title} THIS MORNING.
-                "
-            ]
-            random_tweet = @tweets.sample
-
-            client.update(random_tweet)
-
+            client.update("Morning, A dollar costs N#{title} ")
     end
 
     desc "Saves Parallel FX rate to the DB"
@@ -56,21 +41,7 @@ namespace :savefxtodb do
             title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
-            @tweets = [
-                "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS AFTERNOON. WE'RE DOOMED!",
-                "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
-                "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS AFTERNOON",
-                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this afternoon.",
-                "FUCK ME SIDEWAYS! A DOLLAR IS TRADING FOR N#{title}",
-                "IF YOU WERE HAVING A GOOD AFTERNOON. FUCK YOU. A DOLLAR IS N#{title}.",
-                "A DOLLAR IS N#{title}, WYD EMEFIELE?",
-                "GOOD NEWS!
-                 SIKE! NAIRA IS STILL SHIT AND EXCHANGED FOR N#{title} THIS AFTERNOON.
-                "
-            ]
-            random_tweet = @tweets.sample
-
-            client.update(random_tweet)
+            client.update("Afternoon, A dollar costs N#{title} ")
 
     end
 
@@ -93,21 +64,7 @@ namespace :savefxtodb do
             title = entries.css('table')[0].css('tr')[1].css('td')[1].text
             title = title[6..8]
 
-            @tweets = [
-                "WHAT THE HELL? THE DOLLAR EXCHANGED FOR N#{title} THIS EVENING. WE'RE DOOMED!",
-                "OMGGGG BLOODY HELL RIGHT NOW THE $$$ IS TRADING FOR N#{title} WE'RE DEFINITELY FUCKED. AFRICA IS NOT A COUNTRY",
-                "FUCK ME, THE DOLLAR EXCHANGED FOR N#{title} THIS EVENING",
-                "SUCK MY NIPPLES HALLE BERRY!! A dollar exchanged for N#{title} this evening.",
-                "FUCK ME SIDEWAYS! A DOLLAR IS TRADING FOR N#{title}",
-                "IF YOU WERE HAVING A GOOD EVENING. FUCK YOU. A DOLLAR IS N#{title}.",
-                "A DOLLAR IS N#{title}, WYD EMEFIELE?",
-                "GOOD NEWS!
-                 SIKE! NAIRA IS STILL SHIT AND EXCHANGED FOR N#{title} THIS EVENING.
-                "
-            ]
-            random_tweet = @tweets.sample
-
-            client.update(random_tweet)
+            client.update("Evening, A dollar costs N#{title} ")
 
     end
 
